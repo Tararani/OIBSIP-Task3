@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: "Roboto", sans-serif;
+    --color: rgb(3, 1, 25);
+    --color2: rgb(155, 176, 176);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    height: 100vh;
+    color: rgb(18, 4, 4);
+    background-image:linear-gradient(60deg, #291d1d, #741111);
+    font-size: 20px;
+}
+
+label {
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+input {
+    margin: 50px 0 10px;
+    padding: 7px;
+    font-size: 20px;
+    border-color: 2px black;
+    border-radius: 5px;
+}
+
+.result {
+    margin: 20px 0 30px;
+    font-size: 26px;
+    color: rgb(231, 231, 10);
+    letter-spacing: 1px;
+    height: 1.3em;
+    font-weight: bold;
+}
+
+button {
+    width: 200px;
+    margin: 0 30px;
+    padding: 10px 30px;
+    background-color: wheat;
+    border: 2.2px solid var(--color);
+    border-radius: 5px;
+    color: black;
+    font-size: 25px;
+    transition: color 0.3s, box-shadow 0.3s;
+    box-shadow: 3px 3px 10px var(--color2);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: antiquewhite;
+}
+
+/* ------> Media queries <------ */
+@media screen and (max-width: 500px) {
+    Smartphones/ label {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    Bigger screens/ button {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+}
